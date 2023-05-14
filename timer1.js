@@ -7,14 +7,11 @@ let timer = function() {
     setTimeout(() => {
       process.stdout.write('\x07');
     }, (time[i] * 1000));
-    console.log(time[i]);
   }
   return;
 };
 
-
 timer();
-
 
 // No numbers are provided: Easy. It should just not beep at all and end immediately since no beeps should get scheduled.
 // An input is a negative number: Ignore/skip any numbers that are negative. We can't schedule anything in the past.
